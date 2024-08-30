@@ -31,6 +31,10 @@ a{
     font-size: 25px;
 }
 
+.dribbleimage{
+     top: 0;
+}
+
 .navbar input{
     height: 35px;
 }
@@ -47,15 +51,18 @@ a{
     gap: 25px;
 }
 
+
 .searchbar
 {
+  height: 40px;
 border: 1px solid black;
-padding: 10px;
+padding-right: 80px;
 border-radius: 15px;
 display: flex;
 gap: 5px;
 align-items: center;
 }
+
 
 .searchbar input{
     outline: none;
@@ -163,7 +170,7 @@ align-items: center;
 
 
 .imgwrapper{
-    height: 400px;
+    height: 230px;
     width: 300px;
     overflow: hidden;
     border-radius: 30px;
@@ -213,4 +220,88 @@ background-color: aqua;
             padding: 10px;
             background-color: rgb(226, 190, 190);
             border-radius:50%;
+    }
+
+    .footer{
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+    }
+
+  
+
+    .footer1 img{
+              width: 120px;
+              height: 80px;
+            }
+
+      .footer2 {
+        display: flex;
+        gap: 40px;
+        font-size: 17px;
+         font-family: fangsong;
+         font-weight:bold;
+      }      
+
+      .footer3{
+          display: flex;
+           gap: 10px;
+      }
+
+      .footer3 i{
+          font-size: 25px;
+      }
+
+    /* new modification 2*/
+    @media screen and (max-width: 600px) and (min-width: 0px){
+       /* body{
+              background-color:red;
+        }
+              */
+
+        .navbar{
+            display: block;
+            font-size: 20px;
+        }
+
+        .hero h1{
+            font-size: 6vw;
+          }
+
+          .hero p{
+            width: 400px;
+            font-size: 2.5vw;
+          }
+
+          .bigSearch{
+            width: 350px;
+          }
+    }
+
+
+    @media (max-width:430px){
+      .navbar {
+        height: 50px;
+        width: 200px;
+        margin-top: 30px;
+      /*  background-color: blue; */
+    }
+
+    .hero p{
+      font-size: 22px;
+    }
+
+    .trending{
+         margin-right: 150px;
+    }
+
+    .trending h3{
+      font-size: 10px;
+    }
+
+    .trending a{
+      font-size:10px;
+    }
+     
+
     }
